@@ -1,0 +1,205 @@
+<title>Vdbench output/config.html</title><pre>
+Output from script /root/vdbench/linux/config.sh: 
+
+2025年 04月 28日 星期一 19:58:20 CST
+>>>>>uname -a
+Linux node3 6.15.0-rc2 #1 SMP PREEMPT_DYNAMIC Mon Apr 28 11:37:55 CST 2025 x86_64 x86_64 x86_64 GNU/Linux
+2025年 04月 28日 星期一 19:58:20 CST
+>>>>>ifconfig -a
+ethx0: flags=6211<UP,BROADCAST,RUNNING,SLAVE,MULTICAST>  mtu 1500
+        ether a0:36:9f:4b:50:cc  txqueuelen 1000  (Ethernet)
+        RX packets 15755  bytes 1061601 (1.0 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 48600  bytes 3782788 (3.6 MiB)
+        TX errors 0  dropped 1 overruns 0  carrier 0  collisions 0
+
+ethx1: flags=6211<UP,BROADCAST,RUNNING,SLAVE,MULTICAST>  mtu 1500
+        ether a0:36:9f:4b:50:ce  txqueuelen 1000  (Ethernet)
+        RX packets 29069  bytes 10907296 (10.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 46196  bytes 3392338 (3.2 MiB)
+        TX errors 0  dropped 1 overruns 0  carrier 0  collisions 0
+
+ethx2: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.30.11.143  netmask 255.255.240.0  broadcast 10.30.15.255
+        inet6 fe80::8e1a:f3ff:fe10:17ce  prefixlen 64  scopeid 0x20<link>
+        ether 8c:1a:f3:10:17:ce  txqueuelen 1000  (Ethernet)
+        RX packets 1777767  bytes 323089924 (308.1 MiB)
+        RX errors 0  dropped 40716  overruns 0  frame 0
+        TX packets 1479096  bytes 285397993 (272.1 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ethx3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::8e1a:f3ff:fe10:17cf  prefixlen 64  scopeid 0x20<link>
+        ether 8c:1a:f3:10:17:cf  txqueuelen 1000  (Ethernet)
+        RX packets 652655  bytes 53399835 (50.9 MiB)
+        RX errors 0  dropped 40713  overruns 0  frame 0
+        TX packets 24  bytes 3831 (3.7 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ksvdinat0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.84.254  netmask 255.255.255.0  broadcast 192.168.84.255
+        inet6 fe80::a8d0:49ff:fe13:434c  prefixlen 64  scopeid 0x20<link>
+        ether aa:d0:49:13:43:4c  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 57  bytes 8159 (7.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 303682  bytes 36403083 (34.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 303682  bytes 36403083 (34.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ovs-system: flags=4098<BROADCAST,MULTICAST>  mtu 1500
+        ether e6:44:e5:76:99:3f  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+storage_bond: flags=5187<UP,BROADCAST,RUNNING,MASTER,MULTICAST>  mtu 1500
+        inet 100.30.0.143  netmask 255.255.255.0  broadcast 100.30.0.255
+        inet6 fe80::a236:9fff:fe4b:50cc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:4b:50:cc  txqueuelen 1000  (Ethernet)
+        RX packets 44824  bytes 11968897 (11.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 94796  bytes 7175126 (6.8 MiB)
+        TX errors 0  dropped 4 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:73:6b:0a  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 14 overruns 0  carrier 0  collisions 0
+
+virbr0-nic: flags=4098<BROADCAST,MULTICAST>  mtu 1500
+        ether 52:54:00:73:6b:0a  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 2 overruns 0  carrier 0  collisions 0
+
+2025年 04月 28日 星期一 19:58:20 CST
+>>>>>id
+用户id=0(root) 组id=0(root) 组=0(root)
+2025年 04月 28日 星期一 19:58:20 CST
+>>>>>mount
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+devtmpfs on /dev type devtmpfs (rw,nosuid,size=131545700k,nr_inodes=32886425,mode=755)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,size=52644148k,nr_inodes=819200,mode=755)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,size=4096k,nr_inodes=1024,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+/dev/mapper/ko_node1-root on / type ext4 (rw,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=33,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=55638)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,size=131610372k,nr_inodes=1048576)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+/dev/sde2 on /boot type ext4 (rw,relatime)
+/dev/mapper/ko_node1-data on /data type ext4 (rw,relatime)
+/dev/sde1 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro)
+/dev/mapper/ko_node1-data on /home type ext4 (rw,relatime)
+/dev/mapper/ko_node1-data on /opt type ext4 (rw,relatime)
+/dev/mapper/ko_node1-data on /root type ext4 (rw,relatime)
+/dev/mapper/ko_node1-data on /usr/local type ext4 (rw,relatime)
+/dev/mapper/ko_node1-data on /var type ext4 (rw,relatime)
+sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
+sunrpc on /data/var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
+tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=26322072k,nr_inodes=6580518,mode=700)
+2025年 04月 28日 星期一 19:58:20 CST
+>>>>>memory
+MemTotal:       263220740 kB
+MemFree:        256685172 kB
+MemAvailable:   257290992 kB
+Buffers:          233892 kB
+Cached:          1872432 kB
+SwapCached:            0 kB
+Active:           567048 kB
+Inactive:        3837096 kB
+Active(anon):       5836 kB
+Inactive(anon):  2364840 kB
+Active(file):     561212 kB
+Inactive(file):  1472256 kB
+Unevictable:      234860 kB
+Mlocked:          234456 kB
+SwapTotal:       4194300 kB
+SwapFree:        4194300 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               312 kB
+Writeback:             0 kB
+AnonPages:       2531116 kB
+Mapped:           252520 kB
+Shmem:             55156 kB
+KReclaimable:     221128 kB
+Slab:             506780 kB
+SReclaimable:     221128 kB
+SUnreclaim:       285652 kB
+KernelStack:       24416 kB
+PageTables:        19168 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    135804668 kB
+Committed_AS:    7658836 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      395332 kB
+VmallocChunk:          0 kB
+Percpu:            31040 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:   1968128 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+Unaccepted:            0 kB
+Balloon:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      633472 kB
+DirectMap2M:    36745216 kB
+DirectMap1G:    232783872 kB
+               total        used        free      shared  buff/cache   available
+Mem:       263220740     4208116   256685172       55156     2327452   257290992
+Low:       263220740     6535568   256685172
+High:              0           0           0
+Swap:        4194300           0     4194300
+2025年 04月 28日 星期一 19:58:20 CST
+>>>>>ps -ef | grep -i vdb
+root     1932957   16033  0 19:58 pts/0    00:00:00 /bin/bash ./vdbench -f block.conf
+root     1932959 1932957  0 19:58 pts/0    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f block.conf
+root     1933108 1932959  0 19:58 pts/0    00:00:00 /bin/bash /root/vdbench/vdbench SlaveJvm -m 100.30.0.143 -n localhost-10-250428-19.58.19.908 -l hd1-0 -p 5570
+root     1933112 1933108  0 19:58 pts/0    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench/:/root/vdbench/classes:/root/vdbench/vdbench.jar Vdb.SlaveJvm SlaveJvm -m 100.30.0.143 -n localhost-10-250428-19.58.19.908 -l hd1-0 -p 5570
+root     1933399 1932959  0 19:58 pts/0    00:00:00 /bin/bash /root/vdbench/linux/config.sh -o /root/vdbench/output hd1
+root     1933419 1933399  0 19:58 pts/0    00:00:00 grep -i vdb
+

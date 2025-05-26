@@ -1,0 +1,43 @@
+<title>Vdbench output/hd1-0.stdout.html</title><pre>
+stdout/stderr for slave=hd1-0
+
+14:00:22.922 14:00:22.922 SlaveJvm execution parameter:  '-m 100.30.0.141'
+14:00:22.922 14:00:22.922 SlaveJvm execution parameter:  '-n localhost-10-250428-14.00.22.625'
+14:00:22.923 14:00:22.922 SlaveJvm execution parameter:  '-l hd1-0'
+14:00:22.923 14:00:22.922 SlaveJvm execution parameter:  '-p 5570'
+14:00:22.923 14:00:22.922 SlaveJvm positional parameter: 'SlaveJvm'
+14:00:22.988 14:00:22.987 successfully connected to master 100.30.0.141
+14:00:22.988 14:00:22.987 Connection to 100.30.0.141 using port 5570 successful
+14:00:23.070 14:00:23.069 ticks_per_second: 100
+14:00:23.099 14:00:23.099 Configuration interpretation took 0.01 seconds
+
+Link to Run Definitions:         <A HREF="#_1607460018">rd1 For loops: None</A>
+
+14:00:23.218 14:00:23.218 Beginning of run setup
+14:00:23.218 14:00:23.218 **********************
+14:00:23.218 
+14:00:23.218 
+14:00:23.252 14:00:23.251 Opening sd=sd1,lun=/dev/bcache0; write: true; flags: OpenFlags: 0x00001000 OtherFlags: 0x00000000
+14:00:23.261 14:00:23.261 Started 1 Workload Generator threads.
+14:00:23.301 14:00:23.301 Started 16 i/o threads for sd1
+14:00:23.302 14:00:23.301 Started a total of 16 i/o threads.
+14:00:23.302 14:00:23.301 Waiting for task synchronization
+14:00:23.302 14:00:23.301 task_wait_start_complete: IO_task /dev/bcache0 1
+14:00:23.502 14:00:23.502 Requesting full garbage collection
+14:00:23.503 14:00:23.503 GcTracker: cum:   1 intv:  1 ms:       5 mss:  0.00% Heap_MB max:   911 curr:   252 used:   153 free:    98 
+14:00:23.523 14:00:23.523 GcTracker: cum:   3 intv:  2 ms:      20 mss:  0.00% Heap_MB max:   911 curr:   284 used:    17 free:   267 
+14:00:23.524 14:00:23.523 task_wait_start_complete() end
+
+<a name="_1607460018"></a><i><b>14:00:24.001 Starting RD=rd1; I/O rate: Uncontrolled MAX; elapsed=86400; For loops: None</b></i>
+
+14:00:24.002 14:00:24.002 task_run_all(): 17 tasks
+14:00:24.215 14:00:24.215 Interrupts issued for tasks WG_task: 2
+14:00:24.215 14:00:24.215 Sent 15 interrupts to 16 waiting IO_task threads
+14:01:24.858 14:01:24.858 Java Heap in MB. max:  910.500; current:  255.000; used:   49.263; free:  205.737
+14:01:24.859 14:01:24.858 Maximum native memory allocation:      131,072; Current allocation:            0
+14:01:24.859 14:01:24.859 End of run
+14:01:24.859 14:01:24.859 **********
+14:01:24.859 
+14:01:24.859 
+14:01:25.623 14:01:25.622 Master is requesting slave shutdown
+14:01:25.623 14:01:25.623 Java Heap in MB. max:  910.500; current:  255.000; used:   49.263; free:  205.737

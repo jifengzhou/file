@@ -1,0 +1,12 @@
+<title>Vdbench output/parmfile.html</title><pre>
+
+* Contents of parameter file: /root/vdbench/block.conf
+
+messagescan=no
+hd=default,vdbench=/root/vdbench,user=root,shell=ssh
+hd=hd1,system=localhost
+
+sd=sd1,hd=hd1,lun=/dev/bcache0,openflags=o_sync,threads=16
+
+wd=wd1,sd=sd1,rdpct=0,xfersize=4k,seekpct=100,rhpct=0
+rd=rd1,wd=wd1,iorate=max,fwd=yes,interval=5,elapsed=86400
